@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="ActiveMQ ### 特点   消峰  比如电商的秒杀功能   异步  不用一个等待一个  比如老师不必非要  立刻 回答 一个学生 而是先让学生把问题写在纸上 然后等老师有空了 再去回答 并且学生也可以去做自己的事 不必在这等着  解耦 避免了直接和 老师对话  降低耦合度 添加新功能时不必大改特该   举例  老师  班长 学生  内存java 分为堆内存 和 栈 内存  堆中 分 新生区">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/08/30/ActiveMQ/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="ActiveMQ ### 特点   消峰  比如电商的秒杀功能   异步  不用一个等待一个  比如老师不必非要  立刻 回答 一个学生 而是先让学生把问题写在纸上 然后等老师有空了 再去回答 并且学生也可以去做自己的事 不必在这等着  解耦 避免了直接和 老师对话  降低耦合度 添加新功能时不必大改特该   举例  老师  班长 学生  内存java 分为堆内存 和 栈 内存  堆中 分 新生区">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://segmentfault.com/img/bVbwwP2?w=828&h=637">
+<meta property="og:updated_time" content="2019-08-30T11:16:48.678Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="ActiveMQ ### 特点   消峰  比如电商的秒杀功能   异步  不用一个等待一个  比如老师不必非要  立刻 回答 一个学生 而是先让学生把问题写在纸上 然后等老师有空了 再去回答 并且学生也可以去做自己的事 不必在这等着  解耦 避免了直接和 老师对话  降低耦合度 添加新功能时不必大改特该   举例  老师  班长 学生  内存java 分为堆内存 和 栈 内存  堆中 分 新生区">
+<meta name="twitter:image" content="https://segmentfault.com/img/bVbwwP2?w=828&h=637">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -158,118 +164,184 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-ActiveMQ" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1>ActiveMQ</h1>
+### 特点
+
+<ul>
+<li><p>消峰  比如电商的秒杀功能 </p>
+</li>
+<li><p>异步  不用一个等待一个  比如老师不必非要  立刻 <em>回答</em> 一个学生 而是先让学生把问题写在纸上 然后等老师有空了 再去回答 并且学生也可以去做自己的事 不必在这等着</p>
+</li>
+<li><p>解耦 避免了直接和 老师对话  降低耦合度 添加新功能时不必大改特该</p>
+</li>
+</ul>
+<h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h3><p>  老师  班长 学生 </p>
+<h4 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h4><p>java 分为堆内存 和 栈 内存 </p>
+<pre><code>堆中 分 新生区  new 的对象 就存放在这里</code></pre><p>​                                养老区</p>
+<p>atctive 目的地 分为 队列 （queue）和 主题区 (topic)</p>
+<pre><code>activeMQ 
+模式 :
+    1： 主题模式
+    2： 队列模式
+
+功能：    
+    1：异步 解耦 消峰
+
+概念：
+    1 ：事务 权限大于 签收 可以配置 自动 或者 手动 
+    2 ：事务 偏向 生产者 签收 偏向 消费者</code></pre><p>​                </p>
+<pre><code>springboot整合需要注意的几点问题
+    1：properties配置 文件 写url 时 不要加引号 例如tcp://192.168.2.128:61616
+                   不要错误的写成“tcp://192.168.2.128:61616” 这样会报Bean初始化异常
+    2：</code></pre><p>JMS介绍： jms是java消息服务接口规范，</p>
+<pre><code>生产者 ： 
+
+消费者：
+
+消息服务：
+
+消息 ： 
+
+    消息头：
+
+    消息体：
+
+    消息体</code></pre><p>执行过程</p>
+<p><img src="https://segmentfault.com/img/bVbwwP2?w=828&h=637" alt="å¾çæè¿°"></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>觉得有帮助，不妨支持一下~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/30/ActiveMQ/" class="archive-article-date">
-  	<time datetime="2019-08-30T11:18:09.487Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-30</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/30/ActiveMQ/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/07/关于在idea部署Maven的一些bug/" class="archive-article-date">
-  	<time datetime="2019-08-07T10:39:04.463Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-07</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/04/SpringMVC的一些问题/" class="archive-article-date">
-  	<time datetime="2019-08-04T01:23:03.653Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-04</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/04/SpringMVC的一些问题/">关于Spring mvc的一些问题</a>
-    </h1>
+  
+    <a href="/2019/08/07/关于在idea部署Maven的一些bug/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/02/hello-world/" class="archive-article-date">
-  	<time datetime="2019-08-02T03:23:18.058Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/02/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -292,8 +364,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

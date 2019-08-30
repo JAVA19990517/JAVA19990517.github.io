@@ -160,6 +160,97 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-ActiveMQ" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1>ActiveMQ</h1>
+### 特点
+
+<ul>
+<li><p>消峰  比如电商的秒杀功能 </p>
+</li>
+<li><p>异步  不用一个等待一个  比如老师不必非要  立刻 <em>回答</em> 一个学生 而是先让学生把问题写在纸上 然后等老师有空了 再去回答 并且学生也可以去做自己的事 不必在这等着</p>
+</li>
+<li><p>解耦 避免了直接和 老师对话  降低耦合度 添加新功能时不必大改特该</p>
+</li>
+</ul>
+<h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h3><p>  老师  班长 学生 </p>
+<h4 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h4><p>java 分为堆内存 和 栈 内存 </p>
+<pre><code>堆中 分 新生区  new 的对象 就存放在这里</code></pre><p>​                                养老区</p>
+<p>atctive 目的地 分为 队列 （queue）和 主题区 (topic)</p>
+<pre><code>activeMQ 
+模式 :
+    1： 主题模式
+    2： 队列模式
+
+功能：    
+    1：异步 解耦 消峰
+
+概念：
+    1 ：事务 权限大于 签收 可以配置 自动 或者 手动 
+    2 ：事务 偏向 生产者 签收 偏向 消费者</code></pre><p>​                </p>
+<pre><code>springboot整合需要注意的几点问题
+    1：properties配置 文件 写url 时 不要加引号 例如tcp://192.168.2.128:61616
+                   不要错误的写成“tcp://192.168.2.128:61616” 这样会报Bean初始化异常
+    2：</code></pre><p>JMS介绍： jms是java消息服务接口规范，</p>
+<pre><code>生产者 ： 
+
+消费者：
+
+消息服务：
+
+消息 ： 
+
+    消息头：
+
+    消息体：
+
+    消息体</code></pre><p>执行过程</p>
+<p><img src="https://segmentfault.com/img/bVbwwP2?w=828&h=637" alt="å¾çæè¿°"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/30/ActiveMQ/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-关于在idea部署Maven的一些bug" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
